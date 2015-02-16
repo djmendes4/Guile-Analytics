@@ -41,10 +41,14 @@ $(window).load(function () {
 			this.d = '';
 			
 			path.setAttribute('id', 'guile-graph-container');
-			path.style.fill = 'none';
-			path.style.stroke = 'rgba(0,0,0,1)';
-			path.style.strokeWidth = '2px';
-			path.style.strokeLinecap = 'square';
+
+			path.setAttribute('fill', 'none');
+			path.setAttribute('stroke', 'rgba(0,0,0,1)');
+
+//			path.style.fill = 'none';
+//			path.style.stroke = 'rgba(0,0,0,1)';
+//			path.style.strokeWidth = '2px';
+//			path.style.strokeLinecap = 'square';
 			
 			this.d += 'M0,0 ';
 			this.d += 'L' + Chart.variables.graphWidth + ',0 ';
